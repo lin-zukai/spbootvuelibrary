@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.JieyueMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Jieyue">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="tushuxinxiid" property="tushuxinxiid" jdbcType="INTEGER"/>
+                                    <result column="tushubianhao" property="tushubianhao" jdbcType="VARCHAR"/>
+                                    <result column="tushumingcheng" property="tushumingcheng" jdbcType="VARCHAR"/>
+                                    <result column="tushufenlei" property="tushufenlei" jdbcType="VARCHAR"/>
+                                    <result column="tushujia" property="tushujia" jdbcType="VARCHAR"/>
+                                    <result column="meitianjiage" property="meitianjiage" jdbcType="DECIMAL"/>
+                                    <result column="faburen" property="faburen" jdbcType="VARCHAR"/>
+                                    <result column="jieyuebianhao" property="jieyuebianhao" jdbcType="VARCHAR"/>
+                                    <result column="jieyueshijian" property="jieyueshijian" jdbcType="VARCHAR"/>
+                                    <result column="guihuanshijian" property="guihuanshijian" jdbcType="VARCHAR"/>
+                                    <result column="jieyuetianshu" property="jieyuetianshu" jdbcType="INTEGER"/>
+                                    <result column="jieyuejine" property="jieyuejine" jdbcType="DECIMAL"/>
+                                    <result column="jieyuezhuangtai" property="jieyuezhuangtai" jdbcType="VARCHAR"/>
+                                    <result column="jieyueren" property="jieyueren" jdbcType="VARCHAR"/>
+                                            <result column="iszf" property="iszf" jdbcType="VARCHAR"/>
+        
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, tushuxinxiid, tushubianhao, tushumingcheng, tushufenlei, tushujia, meitianjiage, faburen, jieyuebianhao, jieyueshijian, guihuanshijian, jieyuetianshu, jieyuejine, jieyuezhuangtai, jieyueren, iszf    </sql>
+    </mapper>

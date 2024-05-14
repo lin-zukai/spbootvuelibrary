@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.TushuxinxiMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Tushuxinxi">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="tushubianhao" property="tushubianhao" jdbcType="VARCHAR"/>
+                                    <result column="tushumingcheng" property="tushumingcheng" jdbcType="VARCHAR"/>
+                                    <result column="tushufenlei" property="tushufenlei" jdbcType="VARCHAR"/>
+                                    <result column="tushujia" property="tushujia" jdbcType="VARCHAR"/>
+                                    <result column="tupian" property="tupian" jdbcType="VARCHAR"/>
+                                    <result column="shipin" property="shipin" jdbcType="VARCHAR"/>
+                                    <result column="zuozhe" property="zuozhe" jdbcType="VARCHAR"/>
+                                    <result column="chubanshe" property="chubanshe" jdbcType="VARCHAR"/>
+                                    <result column="jieyueyupeijin" property="jieyueyupeijin" jdbcType="DECIMAL"/>
+                                    <result column="meitianjiage" property="meitianjiage" jdbcType="DECIMAL"/>
+                                    <result column="jieyuecishu" property="jieyuecishu" jdbcType="INTEGER"/>
+                                    <result column="faburen" property="faburen" jdbcType="VARCHAR"/>
+                                    <result column="tushuzhuangtai" property="tushuzhuangtai" jdbcType="VARCHAR"/>
+                                    <result column="tushuxiangqing" property="tushuxiangqing" jdbcType="VARCHAR"/>
+                                    <result column="issh" property="issh" jdbcType="VARCHAR"/>
+                
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, tushubianhao, tushumingcheng, tushufenlei, tushujia, tupian, shipin, zuozhe, chubanshe, jieyueyupeijin, meitianjiage, jieyuecishu, faburen, tushuzhuangtai, tushuxiangqing, issh    </sql>
+    </mapper>

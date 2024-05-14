@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.TushuguanliyuanMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Tushuguanliyuan">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="zhanghao" property="zhanghao" jdbcType="VARCHAR"/>
+                                    <result column="mima" property="mima" jdbcType="VARCHAR"/>
+                                    <result column="xingming" property="xingming" jdbcType="VARCHAR"/>
+                                    <result column="xingbie" property="xingbie" jdbcType="VARCHAR"/>
+                                    <result column="lianxifangshi" property="lianxifangshi" jdbcType="VARCHAR"/>
+                                    <result column="youxiang" property="youxiang" jdbcType="VARCHAR"/>
+                                
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, zhanghao, mima, xingming, xingbie, lianxifangshi, youxiang    </sql>
+        <select id="login" resultMap="BaseResultMap" parameterType="com.spring.entity.Tushuguanliyuan">
+        select
+        <include refid="Base_Column_List"/>
+        from tushuguanliyuan        where zhanghao = #{zhanghao}
+        AND mima = #{mima}
+    </select>
+    </mapper>

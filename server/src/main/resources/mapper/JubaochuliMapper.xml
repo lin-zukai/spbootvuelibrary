@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.JubaochuliMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Jubaochuli">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="jubaoid" property="jubaoid" jdbcType="INTEGER"/>
+                                    <result column="tushuxinxiid" property="tushuxinxiid" jdbcType="INTEGER"/>
+                                    <result column="tushubianhao" property="tushubianhao" jdbcType="VARCHAR"/>
+                                    <result column="tushumingcheng" property="tushumingcheng" jdbcType="VARCHAR"/>
+                                    <result column="tushufenlei" property="tushufenlei" jdbcType="VARCHAR"/>
+                                    <result column="tushujia" property="tushujia" jdbcType="VARCHAR"/>
+                                    <result column="faburen" property="faburen" jdbcType="VARCHAR"/>
+                                    <result column="jubaoren" property="jubaoren" jdbcType="VARCHAR"/>
+                                    <result column="chulibeizhu" property="chulibeizhu" jdbcType="VARCHAR"/>
+                                    <result column="chuliren" property="chuliren" jdbcType="VARCHAR"/>
+                                
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, jubaoid, tushuxinxiid, tushubianhao, tushumingcheng, tushufenlei, tushujia, faburen, jubaoren, chulibeizhu, chuliren    </sql>
+    </mapper>
